@@ -1,0 +1,3 @@
+# Defect-Detection-Laser-Ultrasonics
+This repository details an implementation of object detection and tracking in ultrasonic images to allow for detection in high noise images. The dataset used as part of this study is a sequence of ultrasonic images with decreasing noise. This is the case as more scans of the sample are aquired the defect should become clearer.
+To allow for detection in real time track-before-detect approach was adopted from radar systems to allow for detection in high noise environments. The system is based on YOLOv5 and the Kalman filter. The YOLO implementation detects defects on an image by image basis and then these detections are tracked across the sequence of images to make a detection
